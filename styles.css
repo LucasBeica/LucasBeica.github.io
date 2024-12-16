@@ -1,6 +1,8 @@
+/* Estilos globales */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #2d3436, #636e72); /* Fondo oscuro con degradado */
+    color: #dfe6e9; /* Letras en gris claro */
     margin: 0;
     padding: 0;
     display: flex;
@@ -9,34 +11,73 @@ body {
     height: 100vh;
 }
 
+/* Contenedor principal */
 .container {
+    background: #1e272e; /* Fondo oscuro del contenedor */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    max-width: 500px;
+    width: 90%;
     text-align: center;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #ffffff; /* Color del texto */
 }
 
+/* Título */
 h1 {
     margin-bottom: 20px;
+    font-size: 28px;
+    color: #74b9ff; /* Azul moderno */
 }
 
+/* Etiqueta de selección */
 label {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 10px;
     display: block;
+    color: #b2bec3; /* Gris claro */
 }
 
+/* Select */
 select {
-    padding: 10px;
+    width: 100%;
+    padding: 12px;
     font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 20px;
+    border: 1px solid #b2bec3; /* Borde gris claro */
+    border-radius: 8px;
+    background-color: #2d3436; /* Fondo del select */
+    color: #ffffff; /* Texto blanco */
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+    transition: border-color 0.3s;
 }
 
+/* Hover y enfoque del select */
+select:focus,
+select:hover {
+    border-color: #74b9ff; /* Cambia el color del borde al azul moderno */
+}
+
+/* Traducción */
 #translation {
-    font-size: 18px;
+    margin-top: 20px;
+    font-size: 20px;
     font-weight: bold;
-    color: #333;
+    color: #55efc4; /* Verde suave */
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    select {
+        font-size: 14px;
+    }
+
+    #translation {
+        font-size: 18px;
+    }
 }
